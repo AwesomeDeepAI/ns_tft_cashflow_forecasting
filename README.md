@@ -11,12 +11,12 @@ This repository contains the official PyTorch implementation, synthetic dataset 
 Long-term corporate liquidity planning relies heavily on predicting the interconnections among non-stationary time series—specifically Operating Cashflow (OCF) and Investing Cashflow (ICF). While purely connectionist deep neural networks offer high predictive accuracy, they routinely violate hard financial constraints and zero-sum accounting identities during structural breaks. 
 We introduce the **Neuro-Symbolic Temporal Fusion Transformer (NS-TFT)**, an end-to-end architecture that frames multi-horizon forecasting as a constrained optimisation problem. By encoding unscripted policy text into a financial Knowledge Graph (KG) via LLMs, our approach enforces strict mathematical projections at inference time without requiring model retraining.
 
-### Key Results
+#### Key Results
 * **Accounting Violation Rate (AVR):** Achieves **0.0%** AVR during severe corporate shocks, compared to 50-100% for Vanilla TFT and 16-100% for classical VECM.
-* **Accuracy:** Reduces 36-month RMSE from 2.70 (VECM) to **1.24**, effectively maintaining the predictive power of deep sequence models while guaranteeing structural financial compliance.
+* **Accuracy:** Reduces 36-month RMSE from 2.70 (VECM) to **1.24**, maintaining the predictive power of deep sequence models while guaranteeing structural financial compliance.
 ---
 
-## 🏗️ Architecture
+#### 🏗️ Architecture
 Our neuro-symbolic framework operates across three sequential phases:
 
 1. **Symbolic Knowledge Extraction:** An LLM extracts dynamic boundaries from unstructured treasury mandates into a Knowledge Graph.
