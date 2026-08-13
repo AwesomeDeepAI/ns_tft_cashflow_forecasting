@@ -43,9 +43,10 @@ Clone the repository and install the required dependencies:
 git clone [https://github.com/AwesomeDeepAI/ns_tft_cashflow_forecasting.git](https://github.com/AwesomeDeepAI/ns_tft_cashflow_forecasting.git)
 cd ns_tft_cashflow_forecasting
 pip install -r requirements.txt
+```
 
 ## ⚙️ Citation
-```md
+```
 @inproceedings{anonymous2026nesy,
   title={Neuro-Symbolic Liquidity Planning: Grounding Cashflow Forecasting with Knowledge Graph Constraints},
   author={Anonymous Author(s)},
