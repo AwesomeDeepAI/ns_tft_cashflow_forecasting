@@ -51,12 +51,19 @@ pip install -r requirements.txt
 Please note that due to the strict confidentiality of real-world corporate treasury ledgers, this repository includes a structurally generated synthetic dataset spanning a 15-year horizon (180 months) that simulates non-stationary mechanics and corporate structural break: 
 
 **1. Generate Synthetic DataRun the generation script to create the 15-year multivariate dataset (OCF, ICF, CapEx, CPI, CBIR):**
-   ``` Bash python scripts/generate_synthetic_data.py --output data/synthetic_treasury.csv ```
+
+   ```Bash python scripts/generate_synthetic_data.py --output data/synthetic_treasury.csv```
+
 **2. Knowledge Graph ExtractionExtract the financial rules and policy constraints from unstructured text to build the dynamic constraints base:**
+
    ```Bash python scripts/extract_kg.py --input data/board_directives.txt --output config/constraints.json```
+   
 **3. Model TrainingTrain the neural sequence engine (Vanilla TFT, Heuristic TFT, or NS-TFT) across 3 distinct random seeds:**
+
    ```Bash python train.py --model ns_tft --epochs 150 --batch_size 32 --seeds 3```
+   
 **4. Inference & Differentiable ProjectionRun multi-horizon forecasting ($H=12, 24, 36$) and apply the mathematical projection solver to strictly enforce the extracted boundaries:**
+
    ```Bash python evaluate.py --model ns_tft --horizon 36 --apply_solver True```
 
 ## ⚙️ Citation
