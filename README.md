@@ -31,6 +31,7 @@ $$\hat{y}_{t}^{*} = \arg \min_{y} \frac{1}{2} \vert{}\vert{}y - \hat{y}_{t}\vert
 
 ## ⚙️ Installation
 ### Repository Structure
+```
   ├── config/                  # Hyperparameters and generated constraint bases
   ├── data/                    # Synthetic data generation and loaders
   ├── models/                  
@@ -42,6 +43,7 @@ $$\hat{y}_{t}^{*} = \arg \min_{y} \frac{1}{2} \vert{}\vert{}y - \hat{y}_{t}\vert
   ├── scripts/                 # Utility scripts for training and evaluation
   ├── requirements.txt         # Python dependencies
   └── README.md
+```
 
 In order to reproduce the results, please clone the repository and install the required dependencies:
 
