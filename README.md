@@ -1,4 +1,4 @@
-# Anonymous Repo for Neuro-Symbolic Cashflow Forecasting with Knowledge Graph Constraints
+# Neuro-Symbolic Cashflow Forecasting with Knowledge Graph Constraints
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
